@@ -1,7 +1,8 @@
-import { Header } from "./components/Header"
+import { Header } from './components/Header'
 import { Sidebar } from './components/Sidebar'
 import './globals.css'
 import styles from './App.module.css'
+import { Post } from './components/Post'
 
 const App = () => {
   return (
@@ -10,7 +11,9 @@ const App = () => {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <p>Post 1 2 3</p>
+          <Post />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
