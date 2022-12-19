@@ -1,3 +1,5 @@
+import { Avatar } from '../Avatar'
+import { Comment } from '../Comment'
 import styles from './Post.module.css'
 
 export const Post = () => {
@@ -5,10 +7,7 @@ export const Post = () => {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://github.com/alexandrebekor.png"
-          />
+          <Avatar />
           <div>
             <strong>Alexandre Bekor</strong>
             <span>Full-stack Developer</span>
@@ -34,6 +33,13 @@ export const Post = () => {
           <button type="submit">Publicar</button>
         </footer>
       </form>
+
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
     </article>
   )
 }
