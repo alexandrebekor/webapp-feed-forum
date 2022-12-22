@@ -16,14 +16,14 @@ type Content = {
   content: string
 }
 
-type Post = {
+export type PostProps = {
   id: number
   author: Author
   content: Content[]
   publishedAt: Date
 }
 
-export const Post = ({ id, author, content, publishedAt }: Post) => {
+export const Post = ({ id, author, content, publishedAt }: PostProps) => {
   const [comments, setComments] = useState<string[]>([])
   const [newComment, setNewComment] = useState<string>('')
 

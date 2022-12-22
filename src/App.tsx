@@ -1,10 +1,10 @@
 import { Header } from './components/Header'
 import { Sidebar } from './components/Sidebar'
-import './globals.css'
 import styles from './App.module.css'
-import { Post } from './components/Post'
+import { Post, PostProps } from './components/Post'
+import './globals.css'
 
-const posts = [
+const posts: PostProps[] = [
   {
     id: 1,
     author: {
@@ -14,21 +14,20 @@ const posts = [
     },
     content: [
       { type: 'paragraph', content: 'Hello everyone! 🤚' },
-      { type: 'paragraph', content: 'My name is Alexandre Bekor.' },
-      { type: 'link', content: 'https://alexandrebekor.com' },
-    ],
-    publishedAt: new Date('2022-12-19'),
-  },
-  {
-    id: 2,
-    author: {
-      avatarUrl: 'https://github.com/alexandrebekor.png',
-      name: 'João Vitor',
-      role: 'full-stack developer',
-    },
-    content: [
-      { type: 'paragraph', content: 'Hello everyone, come on! 🤚' },
-      { type: 'paragraph', content: 'My name is João Vitor.' },
+      {
+        type: 'paragraph',
+        content:
+          'Sou desenvolvedor full-stack, imerso na criação de soluções em software desde 2012 e apaixonado pelo impacto positivo da programação nos negócios, e na sociedade!',
+      },
+      {
+        type: 'paragraph',
+        content:
+          'Esse projeto foi desenvolvido com as tecnologias: React.JS, CSS, Vite.JS',
+      },
+      {
+        type: 'paragraph',
+        content: 'Para mais informações, dá uma olhada no meu blog:',
+      },
       { type: 'link', content: 'https://alexandrebekor.com' },
     ],
     publishedAt: new Date('2022-12-19'),
