@@ -63,6 +63,7 @@
   border: 0;
   color: var(--gray-400);
   cursor: pointer;
+  border-radius: 2px;
 
   display: flex;
   align-items: center;
